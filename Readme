@@ -1,57 +1,62 @@
-<h1> Introdução </h1>
+## criarcontas.sh
 
-criarcontas.sh
+### Descrição
 
+O script `criarcontas.sh` é um script de shell Bash projetado para automatizar o processo de criação de contas de usuário para novos usuários do suporte em um serviço de hospedagem. Ele lê informações de um arquivo de dados chamado `/tmp/suporte/novosusuarios` e cria contas de usuário com prefixo "sre_" e permissões de sudo.
 
-Descrição
-O script criarcontas.sh é um script de shell Bash projetado para automatizar o processo de criação de contas de usuário para novos usuários do suporte em um serviço de hospedagem. Ele lê informações de um arquivo de dados chamado /tmp/suporte/novosusuarios e cria contas de usuário com prefixo "sre_" e permissões de sudo.
+### Como Usar
 
-Como Usar
-Requisitos
-Sistema operacional Linux
-Permissões de superusuário (root) para executar o script
-Execução
-Clone o repositório ou baixe o script criarcontas.sh para o seu sistema.
-Torne o script executável com o comando: chmod +x criarcontas.sh
-Execute o script: ./criarcontas.sh
-Arquivo de Dados
-Certifique-se de que o arquivo de dados /tmp/suporte/novosusuarios existe e está formatado corretamente. O arquivo deve ser separado por dois pontos (:), onde o primeiro campo é o nome do usuário e o segundo campo é a senha.
+#### Requisitos
 
+- Sistema operacional Linux
+- Permissões de superusuário (root) para executar o script
 
-Observações
-O script adiciona um prefixo "sre_" ao nome de usuário.
-As senhas dos usuários são definidas com base no arquivo de dados.
-As contas de usuário criadas terão permissões de sudo.
+#### Execução
 
-############################################################################
-Script de Impressão de Linhas com Prefixo "sre_"
-Este script Bash utiliza o AWK para imprimir apenas as linhas do arquivo /etc/passwd que começam com o prefixo "sre_".
+1. Clone o repositório ou baixe o script `criarcontas.sh` para o seu sistema.
+2. Torne o script executável com o comando: `chmod +x criarcontas.sh`
+3. Execute o script: `./criarcontas.sh`
 
-Como Usar
-Clone o repositório ou baixe o script print_sre_lines.sh para o seu sistema.
-Torne o script executável com o comando: chmod +x print_sre_lines.sh
-Execute o script: ./print_sre_lines.sh
-Certifique-se de que você tem permissões suficientes para acessar o arquivo /etc/passwd. Se você estiver executando o script como um usuário regular, talvez seja necessário usar sudo ou garantir que o usuário tenha permissões de leitura no arquivo.
+#### Arquivo de Dados
 
-Observações
-O script utiliza AWK para filtrar as linhas do arquivo.
-A saída consistirá apenas nas linhas que começam com o prefixo "sre_".
+Certifique-se de que o arquivo de dados `/tmp/suporte/novosusuarios` existe e está formatado corretamente. O arquivo deve ser separado por dois pontos (:), onde o primeiro campo é o nome do usuário e o segundo campo é a senha.
 
+### Observações
 
+- O script adiciona um prefixo "sre_" ao nome de usuário.
+- As senhas dos usuários são definidas com base no arquivo de dados.
+- As contas de usuário criadas terão permissões de sudo.
 
-##############################################################################
-Script de Impressão de Linhas com Caracteres Alfabéticos e Espaços em Branco
-Este script Bash utiliza o AWK para imprimir apenas as linhas do arquivo /usr/share/doc/gcc/README.Debian que contêm caracteres alfabéticos e espaços em branco.
+---
 
-Como Usar
-Clone o repositório ou baixe o script print_lines.sh para o seu sistema.
-Torne o script executável com o comando: chmod +x print_lines.sh
-Execute o script: ./print_lines.sh
-Certifique-se de que você tem permissões suficientes para acessar o arquivo /usr/share/doc/gcc/README.Debian. Se você estiver executando o script como um usuário regular, talvez seja necessário usar sudo ou garantir que o usuário tenha permissões de leitura no arquivo.
+## Script de Impressão de Linhas com Prefixo "sre_"
 
-Observações
-O script utiliza AWK para filtrar as linhas do arquivo.
-A saída consistirá apenas nas linhas que contêm caracteres alfabéticos e espaços em branco.
+Este script Bash utiliza o AWK para imprimir apenas as linhas do arquivo `/etc/passwd` que começam com o prefixo "sre_".
 
-################################################
+### Como Usar
 
+1. Clone o repositório ou baixe o script `print_sre_lines.sh` para o seu sistema.
+2. Torne o script executável com o comando: `chmod +x print_sre_lines.sh`
+3. Execute o script: `./print_sre_lines.sh`
+
+### Observações
+
+- O script utiliza AWK para filtrar as linhas do arquivo.
+- A saída consistirá apenas nas linhas que começam com o prefixo "sre_".
+
+---
+
+## Script de Impressão de Linhas com Caracteres Alfabéticos e Espaços em Branco
+
+Este script Bash utiliza o AWK para imprimir apenas as linhas do arquivo `/usr/share/doc/gcc/README.Debian` que contêm caracteres alfabéticos e espaços em branco.
+
+### Como Usar
+
+1. Clone o repositório ou baixe o script `print_lines.sh` para o seu sistema.
+2. Torne o script executável com o comando: `chmod +x print_lines.sh`
+3. Execute o script: `./print_lines.sh`
+
+### Observações
+
+- O script utiliza AWK para filtrar as linhas do arquivo.
+- A saída consistirá apenas nas linhas que contêm caracteres alfabéticos e espaços em branco.
