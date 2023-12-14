@@ -35,9 +35,9 @@ Este script Bash utiliza o AWK para imprimir apenas as linhas do arquivo `/etc/p
 
 ### Como Usar
 
-1. Clone o repositório ou baixe o script `print_sre_lines.sh` para o seu sistema.
-2. Torne o script executável com o comando: `chmod +x print_sre_lines.sh`
-3. Execute o script: `./print_sre_lines.sh`
+1. Clone o repositório ou baixe o script `sre_usuarios.sh` para o seu sistema.
+2. Torne o script executável com o comando: `chmod +x sre_usuarios.sh`
+3. Execute o script: `./sre_usuarios.sh`
 
 ### Observações
 
